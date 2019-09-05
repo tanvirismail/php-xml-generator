@@ -208,22 +208,5 @@
 		}
 		
 	}
-	
-	
-	
-	$sitemap = new Sitemap;
-	$sitemap->skip(["https://www.lipsum.com/skip"]);
-	$sitemap->priority("1.0");
-	$sitemap->frequency("weekly");
-	$sitemap->url("https://www.lipsum.com/");
-	
-	$f = $sitemap->scan();
-	//$f = $sitemap->render();
-	//$f = $sitemap->makeXML();
-	//$f = $sitemap->download();
-	//$f = $sitemap->save();
-	
-	echo '<pre>';
-	print_r ($f);
-	
+
 ?>
